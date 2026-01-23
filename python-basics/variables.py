@@ -1,13 +1,12 @@
 #1 Many Values to Multiple Variables
-x, y, z = "Orange", "Banana", "Cherry"
+x, y, z = "Strawberry", "Banana", "Cherry"
 print(x)
 print(y)
-print(z)
 
 #2 Output Variables
 x = "Python"
 y = "is"
-z = "awesome"
+z = "cool"
 print(x, y, z)
 
 #3 Global Variables
