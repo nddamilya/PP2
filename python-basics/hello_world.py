@@ -21,4 +21,4 @@ This is a comment
 written in
 more than just one line
 """
-print("Python")
+print(2+3)
