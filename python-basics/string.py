@@ -1,7 +1,7 @@
 #1 Slicing
 b = "Hello, World!"
-print(b[2:5])             
-b = "Hello, World!"
+print(b[2:7])             
+b = "Hello, Python!"
 print(b[2:])              #Slice To the End
 
 #2 Modify Strings
@@ -12,7 +12,7 @@ print(a.replace("H", "J"))
 
 #3 String Concatenation
 a = "Hello"
-b = "World"
+b = "Python"
 c = a + b
 print(c)
 
