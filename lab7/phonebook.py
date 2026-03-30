@@ -52,7 +52,7 @@ def delete_contact():
     cur.execute("DELETE FROM phonebook WHERE username=%s", (name,))
     conn.commit()
     print("Deleted!")
-
+    
 def show_all():
     cur.execute("SELECT * FROM phonebook")
     rows = cur.fetchall()
