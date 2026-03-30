@@ -6,11 +6,11 @@ conn = psycopg2.connect(
     host="localhost",
     database="phonebook",
     user="postgres",
-    password="dami2008"  # <-- замени на свой пароль
+    password="dami2008"  
 )
 cur = conn.cursor()
 
-# --- Функции ---
+#Функции
 def add_contact():
     name = input("Enter name: ")
     phone = input("Enter phone: ")
@@ -72,7 +72,7 @@ def menu():
     print("6. Show all contacts")
     print("0. Exit")
 
-# --- Основной цикл ---
+#Основной цикл
 while True:
     menu()
     choice = input("Choose option: ")
@@ -94,6 +94,6 @@ while True:
     else:
         print("Invalid choice!")
 
-# --- Закрыть соединение ---
+#Закрыть соединение
 cur.close()
 conn.close()
