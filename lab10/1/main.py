@@ -33,7 +33,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Racer")
 
 # Background
-background = pygame.image.load("street.png").convert()
+background = pygame.image.load("images/street.png").convert()
 background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 
@@ -41,7 +41,7 @@ background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("enemy.png").convert_alpha()
+        self.image = pygame.image.load("images/enemy.png").convert_alpha()
         self.image = pygame.transform.scale(self.image, (50, 100))
         self.rect = self.image.get_rect()
         self.respawn()
@@ -62,7 +62,7 @@ class Enemy(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("car.png").convert_alpha()
+        self.image = pygame.image.load("images/car.png").convert_alpha()
         self.image = pygame.transform.scale(self.image, (50, 100))
         self.rect = self.image.get_rect()
         self.rect.center = (160, 520)
@@ -81,7 +81,7 @@ class Player(pygame.sprite.Sprite):
 class Coin(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("coin.png").convert_alpha()
+        self.image = pygame.image.load("images/coin.png").convert_alpha()
         self.image = pygame.transform.scale(self.image, (25, 25))
         self.rect = self.image.get_rect()
         self.respawn()
